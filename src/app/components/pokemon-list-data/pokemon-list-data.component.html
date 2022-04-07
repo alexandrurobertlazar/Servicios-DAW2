@@ -1,0 +1,4 @@
+<div class="py-4 flex flex-col px-4">
+  {{pokemonBasicData.name | titlecase }}
+  <button class="bg-violet-600 text-white rounded-md p-2 mt-2" (click)="eventPokemonSelected.emit(pokemonBasicData)">Haz clic aquí para saber más de este Pokémon</button>
+</div>

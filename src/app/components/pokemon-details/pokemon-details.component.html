@@ -1,0 +1,8 @@
+<div *ngIf="pokemonSelected !== null" class="bg-white shadow-md rounded-md p-2 flex flex-col">
+  <span>Nombre: {{pokemonSelected.name | titlecase}}</span>
+  <span>Habilidades: <span *ngFor="let item of pokemonSelected.abilities">{{item.ability.name | titlecase}}; </span></span>
+  <span>Peso: {{pokemonSelected.weight}}</span>
+  <span>Altura: {{pokemonSelected.height}}</span>
+  <span>Formas: <span *ngFor="let item of pokemonSelected.forms">{{item.name | titlecase}};</span></span>
+  <span>Imagen: <img [src]="pokemonSelected.sprites.front_default"></span>
+</div>
